@@ -1,13 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var entryInput = document.getElementById("entryinput");
-  var entryButton = document.getElementById("entrybutton");
-  var textOutput = document.getElementById("textoutput");
+//the main function
+function init() {
+  var button = document.getElementById("entrybutton");
 
-  entryButton.addEventListener("click", function () {
-    var inputValue = entryInput.value;
-
-    alert("Eskinder Fitsum: " + inputValue);
-
-    textOutput.textContent = inputValue;
-  });
-});
+  //function to show text
+  function showMeText() {
+    var textbox = document.getElementById("entryinput");
+    document.getElementById("textoutput").innerHTML = textbox.value;
+    alert("Eskinder Fitsum: " + textbox.value);
+  }
+}
