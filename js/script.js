@@ -8,4 +8,5 @@ function init() {
     document.getElementById("textoutput").innerHTML = textbox.value;
     alert("Eskinder Fitsum: " + textbox.value);
   }
+  button.addEventListener("click", showMeText);
 }
